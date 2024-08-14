@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face{
+  font-family: "Miama";
+  src: url(../miama_2/Miama.ttf);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Shared Style Here */
+.paragraph{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.section-header{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+.btn-primary{
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 15px 45px;
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary{
+  border-radius: 42px;
+    background: transparent;
+    padding: 15px 45px;
+    color: rgb(255, 255, 255);
+    font-size: 1.12rem;
+    font-weight: 600;
+    border: 1px solid white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+body{
+  max-width: 1900px;
+}
+/* Header Style Here  */
+.header-container{
+  width: 100%;
+  height: 727px;
+  background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(10, 10, 10, 0.9) 100%);
+  color: white;
+  position: relative;
+}
+/* Nav Style Here */
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 60px;
+  align-items: center;
+}
+.nav-title{
+  color: rgb(230, 83, 60);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.nav-list-container{
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding-right: 30px;
+  align-items: center;
+}
+.nav-list{
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+}
+.list{
+  padding: 13px 0px;
+}
+.customize-home{
+  border-radius: 40px;
+  background: rgb(230, 83, 60);
+  padding: 5px 20px;
+  margin: 5px 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#hambar{
+  display: none;
+}
+/* Banner Style Here  */
+.banner{
+  display: flex;
+  width: 75%;
+  margin: 0px auto;
+  color: white;
+}
+.left-container{
+  max-width: 550px;
+  width: 50%;
+  height: 520px;
+  margin-top: 90px;
+}
+.banner-title{
+  color: rgb(255, 255, 255);
+  font-size: 4.88rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+.shape{
+  font-family: "Miama";
+  font-size: 10rem;
+  font-weight: 100;
+}
+#responsive-btn{
+  display: none;
+}
+.banner-description{
+  padding: 40px 0px 30px 0px;
+}
+.right-container{
+ width: 25%;
+ height: 530px;
+ margin-left: 173px;
+ margin-top: 20px;
+}
+.right-container img{
+  width: 360px;
+}
+
+.left-content-box{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.left-content-box .fa-solid{
+  font-size: 20px;
+  position: absolute;
+  bottom: 185px;
+  margin-left: 15px;
+}
+.circle{
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(230, 83, 60);
+  margin-right: 15px;
+}
+.left-shadow-box{
+  position: absolute;
+  left: 795px;
+  top: 556px;
+  width: 195px;
+  height: 91px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  align-items: center;
+}
+
+.right-shadow-box{
+  position: absolute;
+  left: 1122px;
+  top: 265px;
+  width: 185px;
+  height: 93px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.right-content-box{
+  padding: 15px;
+}
+.right-content-box h2{
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.right-content-box p{
+  letter-spacing: 1px;
+  font-size: 0.80rem;
+}
+/* Main Body Style Here  */
+.main-container{
+  width: 100%;
+  color: white;
+  background: rgb(0, 0, 0);
+}
+/* Change your Habits Section Style Here  */
+.change-your-habits{
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 100px;
+}
+.habits-header{
+  text-align: center;
+  width: 700px;
+  margin: 0px auto;
+}
+.habits-header p{
+  padding: 20px 0px;
+}
+.habits-img-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.habits-img-box{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.habits-img-box p{
+  padding: 15px;
+  margin-top: 5px;
+}
+.habits-img-box img{
+  width: 200px;
+  height: 200px;
+  border: 5px solid #1A1A1A;
+  border-radius: 50%;
+}
+.habits-img-box h3{
+  padding-top: 20px;
+}
+.habits-img-box p{
+  padding-top: 10px;
+  line-height: 18px;
+}
+/* Run an Extra Mile Easily Section Style Here  */
+.run-an-extra-mile{
+  margin-top: 100px;
+  border-radius: 15px;
+  background: rgb(34, 34, 34);
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.run-left-container{
+  width: 443px;
+  padding: 40px 55px;
+}
+.run-left-container p{
+  padding: 14px 0px 30px 0px;
+}
+#join-btn{
+  padding: 15px 60px;
+}
+.run-right-container{
+  width: 400px;
+  padding: 40px 10px 20px 140px;
+}
+.run-right-container img{
+  width: 370px;
+  height: 280px;
+  border-radius: 15px;
+}
+/* BMI-Calculator Section Style Here  */
+.bmi-header{
+  width: 650px;
+  margin: 0px auto;
+  margin-top: 80px;
+}
+.bmi-header p{
+  padding: 14px 0px;
+}
+.bmi-calculator-section{
+  margin-top: 80px;
+  width: 100%;
+  height: 500px;
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-evenly;
+}
+.bmi-left-container{
+  margin-top: 60px;
+}
+.bmi-left-container h3{
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding-bottom: 50px;
+}
+.bmi-table{
+  border-collapse: collapse;
+  width: 320px;
+  height: 216px;
+  text-align: left;
+}
+.bmi-table th, td{
+  padding-left: 20px;
+}
+.bmi-table th{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.bmi-table td{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.90rem;
+  font-weight: 400;
+}
+
+.bmi-right-container {
+  margin-top: 60px;
+  width: 600px;
+}
+.bmi-right-container h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.bmi-right-container p{
+  padding-bottom: 35px;
+}
+.input-field input,select{
+  width: 250px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: grey;
+}
+.input-field input {
+  padding-left: 25px;
+  width: 254px;
+}
+.input-field select{
+  padding-left: 21px;
+}
+.Sex{
+  width: 280px;
+}
+.input-field{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+ .factor{
+  margin-top: 15px;
+  width: 588px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+ }
+ .custom-calculate-btn{
+  padding-left: 60px;
+  padding-right: 60px;
+ }
+/* Meet Our Team Section Style Here */
+.meet-our-team{
+  margin-bottom: 70px;
+}
+.meet-section-header{
+  width: 700px;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 90px;
+}
+.meet-section-header p{
+  padding: 15px 0px 20px 0px;
+}
+.meet-image-container{
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 40px;
+  position: relative;
+}
+.meet-team-img{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 12px;
+}
+.meet-team-img img {
+  width: 325px;
+  height: 272px;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 70%;
+}
+.trainer1 h3{
+  position: absolute;
+  top: 225px;
+  left: 35px;
+}
+.trainer1 p {
+  position: absolute;
+  top: 250px;
+  left: 35px;
+}
+.trainer2 h3{
+  position: absolute;
+    top: 225px;
+    left: 387px;
+}
+.trainer2 p{
+  position: absolute;
+    top: 250px;
+    left: 392px;
+}
+.trainer3 h3{
+  position: absolute;
+    top: 225px;
+    left: 740px;
+}
+.trainer3 p{
+  position: absolute;
+    top: 250px;
+    left: 742px;
+}
+.trainer4 h3{
+  position: absolute;
+    bottom: 70px;
+    left: 35px;
+}
+.trainer4 p{
+  position: absolute;
+    bottom: 48px;
+    left: 35px;
+}
+.trainer5 h3{
+  position: absolute;
+    bottom: 70px;
+    left: 390px;
+}
+.trainer5 p{
+  position: absolute;
+    bottom: 48px;
+    left: 392px;
+}
+.trainer6 h3{
+  position: absolute;
+    bottom: 70px;
+    left: 740px;
+}
+.trainer6 p{
+  position: absolute;
+    bottom: 48px;
+    left: 742px;
+}
+/* Membership Plan Section Style Here */
+.membership-header{
+  width: 700px;
+  text-align: center;
+  margin: 0px auto;
+}
+.plan-container{
+  width: 75%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+  margin-top: 50px;
+}
+.plan-description{
+  padding-top: 15px;
+}
+.plan-container-1, .plan-container-4{
+  width: 20%;
+  height: 360px;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin-top: 70px;
+}
+.plan-container-2, .plan-container-3{
+width: 20%;
+height: 492px;
+border-radius: 12px;
+padding: 30px 20px;
+}
+.plan-container-1{
+  background-color: #1b56a6;
+  box-shadow: 5px 5px 15px #1b56a6;
+}
+.plan-price{
+  padding-top: 10px;
+}
+.price-range{
+  font-size: 2.5rem;
+}
+.list-item{
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.list-item li{
+  padding-top: 10px;
+}
+.plan-container-2 {
+  background-color: #a21ba6;
+  box-shadow: 5px 5px 15px #a21ba6;
+}
+.plan-container-3 {
+  background-color: lightseagreen;
+  box-shadow: 5px 5px 15px lightseagreen;
+}
+.plan-container-4{
+  background-color: blueviolet;
+  box-shadow: 5px 5px 15px blueviolet;
+}
+/* Footer Style Here  */
+.footer{
+  background-color: #1A1A1A;
+  color: white;
+}
+.footer-container{
+  width: 75%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.footer-left-container{
+  width: 42%;
+  margin-top: 60px;
+}
+.footer-left-container p{
+  padding-right: 50px;
+}
+.footer-title{
+  color: rgb(230, 83, 60);
+    font-size: 4.2rem;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.footer-column-title{
+  font-size: 2.3rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.footer-column-subtitle{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-left: 4px;
+}
+.footer-column-subtitle p{
+  padding-top: 16px;
+}
+
+
+.Copyright{
+  text-align: center;
+  width: 75%;
+  margin: 0px auto;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 0px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
